@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Contact Us - Daskaya Pizza</title>
+  </head>
+
+  <body class="px-6 is-desktop has-background-warning">
+    <section class="hero is-warning is-flex is-justify-content-center">
+      <div class="hero-body">
+        <div class="container">
+          <img
+            class="svg-logo"
+            src="../public/DASKAYA.svg"
+            alt="Daskaya Pizza Logo"
+            width="208"
+            height="90"
+          />
+        </div>
+      </div>
+      <nav
+        class="navbar is-warning"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand">
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <button class="button is-light mx-1 navbar-item custom-box">
+              <a class="has-text-centered" href="../index.html"> Home </a>
+            </button>
+            <button class="button is-light mx-1 navbar-item custom-box">
+              <a class="has-text-centered" href="./menu.html"> Menu </a>
+            </button>
+            <button class="button is-light mx-1 navbar-item custom-box">
+              <a class="has-text-centered" href="./about.html"> About Us </a>
+            </button>
+            <button class="button is-light mx-1 navbar-item custom-box">
+              <a class="has-text-centered" href="#"> Contact </a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="box is-two-thirds has-text-centered">
+          <h2 class="title">Contact Us</h2>
+        </div>
+
+        <div class="columns is-multiline">
+          <!-- Email Column -->
+          <div class="column is-one-third has-text-centered">
+            <div class="box custom-box">
+              <span class="icon is-large">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <p class="is-size-5">Email</p>
+              <p class="is-size-6">info@daskayapizza.com</p>
+            </div>
+          </div>
+
+          <!-- Phone Number Column -->
+          <div class="column is-one-third has-text-centered">
+            <div class="box custom-box">
+              <span class="icon is-large">
+                <i class="fas fa-phone"></i>
+              </span>
+              <p class="is-size-5">Phone</p>
+              <p class="is-size-6">+45 31 86 01 84</p>
+            </div>
+          </div>
+
+          <!-- Instagram Column -->
+          <div class="column is-one-third has-text-centered">
+            <div class="box custom-box">
+              <span class="icon is-large">
+                <i class="fab fa-instagram"></i>
+              </span>
+              <p class="is-size-5">Instagram</p>
+              <a
+                class="is-size-6"
+                href="https://www.instagram.com/bucakyazilim/"
+                target="_blank"
+                >Follow us
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Column -->
+
+        <div class="box is-two-thirds has-text-centered mb-0">
+          <h2 class="title">Location</h2>
+        </div>
+        <div class="box column has-text-centered">
+          <iframe
+            width="100%"
+            height="400"
+            frameborder="0"
+            style="border: 0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.1764108862426!2d12.132223276861449!3d55.65114057304677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525fc3d0dd4139%3A0xaf6caa4d4fe57f0a!2sCafeteria%20il%20lago!5e0!3m2!1sen!2str!4v1702661958601!5m2!1sen!2str"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white has-text-centered">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-quarter is-pulled-right">
+            <div class="footer-logo">
+              <img src="../public/DASKAYA.svg" alt="Pizza Restaurant Logo" />
+            </div>
+          </div>
+
+          <div class="column is-half"></div>
+
+          <!-- Contact Column -->
+          <div class="column is-one-quarter">
+            <h3 class="title is-size-5 has-text-white">Contact</h3>
+            <p>info@daskayapizza.com</p>
+            <p>+45 31 86 01 84</p>
+            <p>
+              Follow us:
+              <a href="https://www.instagram.com/bucakyazilim/" target="_blank">
+                <i class="fab fa-instagram has-text-white"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Add Bulma's navbar burger toggle functionality
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+          // Add a click event on each of them
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

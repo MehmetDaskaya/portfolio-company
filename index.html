@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Daskaya Pizza</title>
+  </head>
+
+  <body class="px-6 is-desktop has-background-warning">
+    <section class="hero is-warning is-flex is-justify-content-center">
+      <div class="hero-body">
+        <div class="container">
+          <img
+            class="svg-logo"
+            src="./public/DASKAYA.svg"
+            alt="Daskaya Pizza Restaurant Logo"
+            width="208"
+            height="90"
+          />
+        </div>
+      </div>
+      <nav
+        class="navbar is-warning"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand">
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <button class="button is-light mx-1 navbar-item custom-box">
+              <a class="has-text-centered" href="#"> Home </a>
+            </button>
+            <button class="button is-light mx-1 navbar-item custom-box">
+              <a class="has-text-centered" href="./pages/menu.html"> Menu </a>
+            </button>
+            <button class="button is-light mx-1 navbar-item custom-box">
+              <a class="has-text-centered" href="./pages/about.html">
+                About Us
+              </a>
+            </button>
+            <button class="button is-light mx-1 navbar-item custom-box">
+              <a class="has-text-centered" href="./pages/contact.html">
+                Contact
+              </a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <label for="slide1">
+            <img src="./public/carousel1.jpeg" alt="Slide 1" />
+          </label>
+        </div>
+        <div class="carousel-item">
+          <label for="slide2">
+            <img src="./public/carousel2.jpeg" alt="Slide 2" />
+          </label>
+        </div>
+        <div class="carousel-item">
+          <label for="slide3">
+            <img src="./public/carousel3.jpeg" alt="Slide 3" />
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-one-third has-overlap">
+            <div class="box has-text-centered is-transparent custom-box">
+              <h2 class="subtitle">Delicious pizzas made with love!</h2>
+              <a
+                class="button is-success is-size-4 has-text-white custom-box"
+                href="./pages/menu.html"
+                >Order Now</a
+              >
+              <p class="has-text-centered"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="columns is-multiline has-overlap">
+      <!-- About Item 1 -->
+      <div class="column is-half-desktop is-full-mobile">
+        <div class="box is-justify-content-center has-text-centered custom-box">
+          <h3 class="title is-4">Our Location</h3>
+          <img
+            src="./public/pizza-images/pizzeria.jpg"
+            alt="Menu Item 1"
+            class="pizza-image"
+          />
+          <p class="is-size-5 is-size-6-mobile pt-3">
+            Our restaurant is in a super accessible point located in
+            <span class="is-italic">-well known by the tourists-</span> Nyhavn.
+          </p>
+        </div>
+      </div>
+
+      <!-- About Item 2 -->
+      <div class="column is-half-desktop is-full-mobile">
+        <div class="box is-justify-content-center has-text-centered custom-box">
+          <h3 class="title is-4">We Make Our Own Cheese</h3>
+          <img
+            src="./public/pizza-images/cheese.jpg"
+            alt="Menu Item 2"
+            class="pizza-image"
+          />
+          <p class="is-size-5 is-size-6-mobile pt-3">
+            You heard it right! Our cheese is homemade and it is the best of its
+            kind on a pizza.
+          </p>
+        </div>
+      </div>
+
+      <!-- About Item 3 -->
+      <div class="column is-half-desktop is-full-mobile">
+        <div
+          class="box is-justify-content-center has-text-centered has-height-6 custom-box"
+        >
+          <h3 class="title is-4">We Make Our Own Dough</h3>
+          <img
+            src="./public/pizza-images/dough.jpg"
+            alt="Menu Item 3"
+            class="pizza-image"
+          />
+          <p class="is-size-5 is-size-6-mobile pt-3">
+            Pizza dough is the most important aspect of the pizza. And, we show
+            our respect to it.
+          </p>
+        </div>
+      </div>
+
+      <!-- About Item 4 -->
+      <div class="column is-half-desktop is-full-mobile">
+        <div class="box is-justify-content-center has-text-centered custom-box">
+          <h3 class="title is-4">And We Make Our Own Pizza Sauce</h3>
+          <img
+            src="./public/pizza-images/sauce.jpg"
+            alt="Menu Item 4"
+            class="pizza-image"
+          />
+          <p class="is-size-5 is-size-6-mobile pt-3">
+            Smells like Italy. Freshly made and served for your taste.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer has-background-dark has-text-white has-text-centered">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-quarter is-pulled-right">
+            <div class="footer-logo">
+              <img src="./public/DASKAYA.svg" alt="Pizza Restaurant Logo" />
+            </div>
+          </div>
+          <div class="column is-half"></div>
+
+          <!-- Contact Column -->
+          <div class="column is-one-quarter">
+            <h3 class="title is-size-5 has-text-white">Contact</h3>
+            <p>info@daskayapizza.com</p>
+            <p>+45 31 86 01 84</p>
+            <p>
+              Follow us:
+              <a href="https://www.instagram.com/bucakyazilim/" target="_blank">
+                <i class="fab fa-instagram has-text-white"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Add Bulma's navbar burger toggle functionality
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+          // Add a click event on each of them
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
