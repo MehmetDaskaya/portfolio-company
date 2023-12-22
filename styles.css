@@ -65,6 +65,7 @@ body {
 .carousel {
   width: 100%;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .carousel-inner {
